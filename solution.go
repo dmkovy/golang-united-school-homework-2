@@ -1,4 +1,4 @@
-package main
+package solution
 
 import (
 	"math"
@@ -25,7 +25,7 @@ func CalcSquare(sideLen float64, sidesNum myCalcSquareInt) float64 {
 	case 0:
 		res = sideLen * sideLen * math.Pi // count sideLen as radius
 	case 3:
-		res = sideLen * sideLen / 2
+		res = sideLen * sideLen * math.Sqrt(3) / 4
 	case 4:
 		res = sideLen * sideLen
 	default:
